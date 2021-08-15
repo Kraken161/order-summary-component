@@ -1,0 +1,139 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desa-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --light: #f7f9ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat url('./images/pattern-background-desktop.svg') top;
+    background-size: contain;
+    background-color: var(--pale-blue);
+    min-height: 100vh;
+    padding: 75px 30px;
+}
+
+@media (max-width: 450px) {
+    body {
+      background: no-repeat url('./images/pattern-background-mobile.svg') top;
+      background-color: var(--pale-blue);
+    }
+  }
+
+.container {
+    background-color: #fff !important;
+    width: 50%;
+    justify-content: center;
+    width: 420px;
+    height: 650px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px 15px 0 0;
+    margin: 0 auto;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.order-desc {
+    color: var(--desa-blue);
+    width: 80%;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light);
+    margin: 20px 0 32px 0;
+    border-radius: 11px;
+    padding: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px auto;
+    margin-right: 5px auto;
+    width: 95%;
+    background-color: var(--bright-blue);
+    border-radius: 10px;
+    padding: 14px 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    transition: all 0.2s ease;
+    background-color: hsl(245, 75%, 62%);
+    filter: blur(0.3px);
+    -webkit-filter: blur(0.3px);
+}
+
+.cancel-order {
+    justify-content: center;
+    text-align: center;
+    color: var(--desa-blue);
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    border: none !important;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cancel-order:hover {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.change-plan:hover {
+    text-decoration: none;
+    color:hsl(244, 27%, 60%);
+    filter: blur(0.2px);
+    -webkit-filter: blur(0.2px);
+}
+
+.cena {
+    margin-right: 100px;
+    display: block;
+    color: var(--desa-blue);   
+}
