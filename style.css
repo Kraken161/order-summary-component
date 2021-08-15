@@ -30,6 +30,8 @@ body {
     body {
       background: no-repeat url('./images/pattern-background-mobile.svg') top;
       background-color: var(--pale-blue);
+      margin: 20px;
+      padding: 15 20px;
     }
   }
 
